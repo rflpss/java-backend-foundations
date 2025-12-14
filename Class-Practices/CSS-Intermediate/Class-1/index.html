@@ -5,9 +5,79 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="./style.css">
   <title>Test</title>
+  <style>
+
+        .square {
+            width: 100px;
+            height: 100px;
+        }
+
+        .square-red {
+            background-color: red;
+        }
+
+        .square-blue {
+            position: sticky;
+            top: 0px;
+            background-color: blue;
+        }
+
+        .square-green {
+            background-color: green;
+        }
+
+        .aboard {
+            border: 1px solid black;
+        }
+
+        .board {
+           width: 320px;
+           left: 50%;
+            border: 1px solid gray;
+        }
+
+        li {
+            float: right;
+            list-style-type: none;
+            padding: 10px;
+            background-color: lightgreen;
+            margin: 5px;
+        }
+
+    
+    </style>
 </head>
 
 <body> 
+
+    <ul>
+        <li>home</li>
+        <li>courses</li>
+        <li>about</li>
+    </ul>
+
+    <div class="aboard">
+        <img src="./images/CF.jpg" style="width: 200px; float: left; ">
+        <p>
+            This is a normal paragraph, This is a normal paragraph,This is a normal paragraph,This is a 
+            normal paragraph,This is a normal paragraph,This is a normal paragraph,This is a normal paragraph,
+            This is a normal paragraph,This is a normal paragraph,This is a normal paragraph,This is a normal
+            paragraph,This is a normal paragraph,This is a normal paragraph,This is a normal paragraph,This 
+            is a normal paragraph,This is a normal paragraph,This is a normal paragraph,This is a normal paragraph,This is a 
+            normal paragraph,This is a normal paragraph,This is a normal paragraph,This is a normal paragraph,
+            This is a normal paragraph,This is a normal paragraph,This is a normal paragraph,This is a normal
+            paragraph,This is a normal paragraph,This is a normal paragraph,This is a normal paragraph,This 
+            is a normal paragraph,This is a normal paragraph,
+        </p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    --- CLASS 1 --- 
+    
     <div style="background-color: blue">
 
         <div> This is a normal DIV</div>
@@ -37,4 +107,13 @@
         Here I have the start of a paragraph <img src="./images/CF.jpg" style="width: 400px; display: none;"> 
         And the end of the paragraph.
     </p>
+
+    <!-- CLASS 2 -->
+
+    <div class="board">
+        <div class="square square-red"></div>
+        <div class="square square-blue"></div>
+        <div class="square square-green"></div>
+    </div>
+
 </body>

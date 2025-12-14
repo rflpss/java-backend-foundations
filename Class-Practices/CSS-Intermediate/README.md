@@ -25,3 +25,39 @@ You **cannot** place a `<div>` inside a `<p>` (paragraph) tag. If you do, the br
 ### 4. `display: none`
 * Removes the element from the document flow completely.
 * It is **not shown** on the screen.
+
+
+---
+
+## Property: `position`
+
+### 1. `position: static` (Default)
+* **Behavior:** The default state for all elements.
+* Elements follow the normal document flow: they appear one after another (block) or side-by-side (inline).
+* **Note:** `top`, `left`, `right`, and `bottom` properties have **no effect**.
+
+### 2. `position: relative`
+* **Behavior:** The element remains in the normal flow, but is unlocked.
+* **Key feature:** Allows you to use `top`, `left`, `right`, and `bottom` to offset the element **relative to its original position**.
+* **Impact:** Moving it does **not** affect the layout of surrounding elements (it leaves a "ghost" space where it used to be).
+
+### 3. `position: absolute`
+* **Behavior:** The element is **removed** from the normal document flow (other elements act like it doesn't exist anymore).
+* **Positioning Context:** It positions itself relative to the nearest **ancestor (parent)** that has a position other than `static` (usually a parent with `relative`).
+* If no positioned parent is found, it positions itself relative to the page body.
+
+### 4. `position: fixed`
+* **Behavior:** Also removed from the normal flow.
+* **Positioning Context:** It positions itself relative to the **Viewport** (the browser window).
+* **Key feature:** It **stays fixed** on the screen even when you scroll the page (perfect for headers or sticky buttons).
+
+### 5. `position: sticky`
+* **Behavior:** A hybrid between `relative` and `fixed`.
+* It acts like `relative` until the scroll reaches a specific threshold (e.g., `top: 0`), then it "sticks" to the screen like `fixed`.
+
+
+FLOAT interresante para posicionar um elemnto no lado do outro
+
+
+
+alinhamento vertical
