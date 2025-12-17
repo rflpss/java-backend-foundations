@@ -55,9 +55,23 @@ You **cannot** place a `<div>` inside a `<p>` (paragraph) tag. If you do, the br
 * **Behavior:** A hybrid between `relative` and `fixed`.
 * It acts like `relative` until the scroll reaches a specific threshold (e.g., `top: 0`), then it "sticks" to the screen like `fixed`.
 
+---
 
-FLOAT interresante para posicionar um elemnto no lado do outro
+## Responsive Design: `@media` Queries
 
+### 1. The Concept
+Allows the website to change its layout based on the screen size (Mobile vs. Desktop).
 
+### 2. The Golden Rule (Meta Tag)
+For media queries to work on mobile devices, this tag is **mandatory** inside the `<head>` of the HTML:
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
-alinhamento vertical
+### 3. Syntax Example
+```css
+/* Default styles (Desktop/General) */
+body { background-color: blue; }
+
+/* Styles for screens smaller than 600px (Mobile) */
+@media screen and (max-width: 600px) {
+    body { background-color: red; }
+}
