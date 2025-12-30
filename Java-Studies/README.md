@@ -13,7 +13,7 @@ Exercises and notes from the **"Java COMPLETO Programação Orientada a Objetos 
 - [x] **01-Programming-Concepts:** Algorithms, Compilation vs. Interpretation, JVM.
 - [x] **02-Java-Platform-Basics:** JVM, JDK, Editions and "Hello World".
 
-### Section 2: Java Basics (Upcoming)
-- [ ] Variables & Data Types
-- [ ] Input/Output
+### Section 2: Java Basics
+- [x] **03-Java-Variables:** Primitive types (int, double, char, boolean) and String.
+- [ ] Input/Output (Scanner)
 - [ ] Math functions
