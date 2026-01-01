@@ -16,3 +16,24 @@ Java requires you to define the **type** of data before the variable name.
 | **String** | Text | `String name = "Raf";` | **Uppercase 'S'**, double quotes `" "` |
 
 > **Important:** `String` is a Class, not a primitive type. That's why it starts with an uppercase letter!
+
+---
+
+## 3. Output & Formatting (Exercise) 🖨️
+Practice using `System.out.printf` to format data.
+
+### formatting Markers:
+| Marker | Type | Example |
+| :--- | :--- | :--- |
+| **%s** | String (Text) | `printf("Name: %s", name);` |
+| **%d** | Integer (int) | `printf("Age: %d", age);` |
+| **%f** | Floating point | `printf("Price: %.2f", price);` |
+| **%n** | Line Break | Always use `%n` inside printf for new line |
+
+### 🌍 Locale Trick
+To change decimal separator from **Comma (,)** to **Dot (.)**:
+```java
+import java.util.Locale;
+// ... inside main
+Locale.setDefault(Locale.US);
+System.out.printf("%.3f", measure); // Output: 53.235
