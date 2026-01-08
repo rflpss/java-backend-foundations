@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 300px;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+
+    <h1>Search YouTube</h1>
+
+
+        <!-- for send file have to be method POST -->
+    <form method="get" action="">
+
+        <input type="submit">
+        <br>
+        <input type="password" name="password"><br>
+        <input type="checkbox"> sure? <br>
+        <input type="radio" name="gender" checked>Male<br>
+        <input type="radio" name="gender">Female<br>
+        <input type="text" name="username">Username<br>
+   
+            <!-- HTML 5 -->
+        <input type="color" name="color"><br>
+        <input type="date" name="date" max="2018-12-31"><br>
+        <input type="datetime-local" name="date" max="2018-12-31"><br>
+        <input type="file" name="file"><br>
+        <input type="number" name="number"><br>
+        <input type="range" name="range" min="0" max="10"><br>
+               <!-- just numbers on cell -->
+        <input type="tel" name="tel">tel<br>
+        <input type="email" name="email">email<br>
+
+    </form>
+
+
+
+</body>
+
