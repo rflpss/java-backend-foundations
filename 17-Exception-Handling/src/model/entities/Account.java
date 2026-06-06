@@ -61,7 +61,7 @@ public class Account {
 			throw new WithdrawException("Not enough balance!");
 		}
 		else if (amount > withdrawLimit) {
-			throw new WithdrawException("Not more limit!");
+			throw new WithdrawException("The amount exceeds withdraw limit");
 		}
 		
 		 balance -= amount;
