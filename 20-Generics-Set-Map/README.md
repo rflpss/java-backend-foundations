@@ -17,3 +17,17 @@ The program reads the student IDs for all three courses, filters out any duplica
 * **`HashSet`**: Chosen to store the students because it offers excellent performance ($O(1)$ constant time for insertions and lookups in ideal scenarios) and natively prevents duplicate entries.
 * **Overriding `hashCode()` & `equals()`**: Custom-implemented within the `User` class using the `unicNumber` identifier. This ensures that the `HashSet` knows exactly when two distinct memory objects represent the same actual student, successfully discarding clones.
 * **Architecture & Modularization**: Clear separation of concerns between the `application` package (program entry point and I/O handling) and the `entities` package (domain models and core rules).
+
+---
+
+## 🗳️ Practical Exercise: Election Vote Consolidator (Map Interface)
+
+Located at: `20-Generics-Set-Map/Map-exercise`
+
+### 📝 Problem Description
+An application designed to read an election voting log file (.csv format) containing candidate names and the corresponding amount of votes obtained across multiple voting urns. The program reads the logs sequentially, automatically aggregates the tallies for repeating candidates, and generates a consolidated report showing the finalized total scores.
+
+### ⚙️ Technical Concepts Applied
+* **`HashMap`**: Chosen to establish a structural key-value link between candidate names (unique keys) and their accumulating vote counts (values), providing efficient lookups and updates.
+* **`File I/O Streaming`**: Implemented a robust `BufferedReader` system within a `try-with-resources` block to safely read external text logs line-by-line.
+* **`String Tokenization`**: Employed the `.split(",")` method to parse the comma-separated records, effectively parsing the raw lines into identity strings and numeric values.
