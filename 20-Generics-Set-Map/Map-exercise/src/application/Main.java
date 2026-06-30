@@ -1,7 +1,5 @@
 package application;
 
-import entities.Vote;
-
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -16,15 +14,28 @@ public class Main {
         String strPath = sc.nextLine();
         File path = new File(strPath);
 
-        Map<String, Integer> stock = new HashMap<>();
+        Map<String, Integer> votes = new HashMap<>();
 
         try(BufferedReader br = new BufferedReader(new FileReader(path))) {
             String line = br.readLine();
+
             while (line != null) {
                 String[] fields = line.split(",");
                 String name = fields[0];
-                int votes = Integer.parseInt(fields[1]);
+                int count = Integer.parseInt(fields[1]);
                 line = br.readLine();
+
+                if (votes.containsKey(name)) {
+                    int quantityvotes = votes.get(name);
+                    votes.put(name, count + quantityvotes);
+                }
+                else {
+                    votes.put(name, count);
+                }
+            }
+
+            for (String Key : votes.keySet()) {
+                System.out.println(Key + ": " + votes.get(Key));
             }
 
         } catch (IOException e) {
